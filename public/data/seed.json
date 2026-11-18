@@ -1,0 +1,66 @@
+{
+  "settings": {
+    "releaseDate": "2026-11-19",
+    "platforms": "PlayStation 5 · Xbox Series X|S",
+    "source": "https://www.rockstargames.com/VI"
+  },
+  "updates": [
+    {
+      "id": "pre-load",
+      "title": "GTA VI pre-load is open",
+      "date": "2026-11-10",
+      "category": "Release",
+      "summary": "Rockstar has opened pre-loading for digital pre-orders on PlayStation 5 and Xbox Series X|S.",
+      "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+      "image": "/assets/ocean-drive.webp",
+      "imageAlt": "Illustration of a neon-lit art deco hotel at dusk"
+    },
+    {
+      "id": "launch-gallery",
+      "title": "A closer look at Leonida",
+      "date": "2026-11-05",
+      "category": "World",
+      "summary": "The official launch gallery gives us another look at the people and places of Leonida.",
+      "url": "https://www.rockstargames.com/VI/launch-gallery",
+      "image": "/assets/leonida.webp",
+      "imageAlt": "Illustration of a tropical island and its blue coastline from above"
+    },
+    {
+      "id": "launch-trailer",
+      "title": "Watch the GTA VI launch trailer",
+      "date": "2026-10-15",
+      "category": "Trailer",
+      "summary": "Rockstar’s launch trailer features music by Justice with Tame Impala, SZA, and King Gizzard & the Lizard Wizard.",
+      "url": "https://www.rockstargames.com/VI/launch-trailer",
+      "image": "/assets/after-hours.webp",
+      "imageAlt": "Illustration of a red sports car on a tropical road at sunset"
+    }
+  ],
+  "streams": [],
+  "media": [
+    {
+      "id": "official-trailer",
+      "title": "Launch trailer",
+      "type": "Video",
+      "url": "https://www.rockstargames.com/VI/launch-trailer",
+      "image": "/assets/after-hours.webp",
+      "imageAlt": "Illustration of a red sports car at dusk"
+    },
+    {
+      "id": "official-gallery",
+      "title": "Launch gallery",
+      "type": "Gallery",
+      "url": "https://www.rockstargames.com/VI/launch-gallery",
+      "image": "/assets/leonida.webp",
+      "imageAlt": "Illustration of a tropical coastline"
+    },
+    {
+      "id": "official-videos",
+      "title": "Official videos",
+      "type": "Video",
+      "url": "https://www.rockstargames.com/VI/media/videos",
+      "image": "/assets/ocean-drive.webp",
+      "imageAlt": "Illustration of a neon-lit hotel"
+    }
+  ]
+}

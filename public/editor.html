@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#170e20">
+  <title>Editor · Vice Dispatch</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/editor.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="frame masthead-inner editor-masthead">
+      <a class="wordmark" href="/">Vice <span>/</span> <b>Dispatch</b></a>
+      <a class="button button-small" href="/">View site <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="frame editor-main">
+    <h1>Editor</h1>
+    <p id="editor-notice" class="notice" role="status">Checking editor access…</p>
+    <form id="sign-in" class="edit-form login" hidden>
+      <label>Editor password<input name="password" type="password" autocomplete="current-password" required maxlength="512"></label>
+      <button class="button button-primary" type="submit">Sign in</button>
+    </form>
+    <div id="workspace" hidden>
+      <div class="editor-toolbar">
+        <div id="sections" class="filters" aria-label="Content sections">
+          <button type="button" data-section="updates" aria-pressed="true">Updates</button>
+          <button type="button" data-section="streams" aria-pressed="false">Streams</button>
+          <button type="button" data-section="media" aria-pressed="false">Media</button>
+          <button type="button" data-section="settings" aria-pressed="false">Release info</button>
+        </div>
+        <button id="sign-out" class="button button-small" type="button">Sign out</button>
+      </div>
+      <div class="editor-columns">
+        <section id="record-list" aria-labelledby="records-title">
+          <div class="section-title">
+            <h2 id="records-title">Updates</h2>
+            <button id="new-record" class="button button-small" type="button">Add update</button>
+          </div>
+          <ul id="records"></ul>
+        </section>
+        <section class="edit-panel" aria-labelledby="form-title">
+          <h2 id="form-title">Add update</h2>
+          <form id="edit-form" class="edit-form">
+            <div id="fields"></div>
+            <div class="actions">
+              <button id="publish" class="button button-primary" type="submit">Publish</button>
+              <button id="delete-record" class="button button-danger" type="button" hidden>Delete</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+  <noscript><p class="frame">Enable JavaScript to use the editor.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#170e20">
+  <meta name="description" content="An independent GTA VI fan desk for Rockstar updates, creator streams, and official media.">
+  <title>Vice Dispatch · GTA VI updates and streams</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="preload" as="image" href="/assets/vice-city.webp">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/home.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="frame masthead-inner">
+      <a class="wordmark" href="/" aria-label="Vice Dispatch home">Vice <span>/</span> <b>Dispatch</b></a>
+      <nav aria-label="Primary">
+        <a href="#updates">Updates</a>
+        <a href="#streams">Streams</a>
+        <a href="#media">Media</a>
+      </nav>
+      <a class="button button-small" href="/editor">Editor</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-art" src="/assets/vice-city.webp" alt="" width="1536" height="1024" fetchpriority="high">
+      <div class="frame hero-inner">
+        <p class="kicker">The GTA VI fan desk</p>
+        <h1 id="hero-title">Vice <span>Dispatch</span></h1>
+        <p class="hero-copy">GTA VI news, creator streams, and a little Vice City after dark.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#updates">Read the updates <span aria-hidden="true">↓</span></a>
+          <a class="button button-hero" href="#streams">Find streams</a>
+        </div>
+      </div>
+      <p class="art-credit">Original fan illustration</p>
+    </section>
+    <aside class="release-bar" aria-label="Release information">
+      <div class="frame release-inner">
+        <div class="release-info">
+          <span class="release-label">Release date</span>
+          <time id="release-date" datetime="2026-11-19">November 19, 2026</time>
+          <span id="release-platforms">PlayStation 5 · Xbox Series X|S</span>
+        </div>
+        <a id="release-source" class="text-link" href="https://www.rockstargames.com/VI">Rockstar Games <span aria-hidden="true">↗</span></a>
+      </div>
+    </aside>
+    <div class="frame main-frame">
+      <p id="feed-notice" class="notice" role="status" hidden></p>
+      <div class="front-page">
+        <section id="updates" class="updates" aria-labelledby="updates-title">
+          <div class="section-title">
+            <h2 id="updates-title">Latest updates</h2>
+            <a class="text-link" href="https://www.rockstargames.com/newswire?tag=vi">Newswire <span aria-hidden="true">↗</span></a>
+          </div>
+          <div id="update-list" class="stories" aria-busy="true"><p class="subtle">Loading updates…</p></div>
+        </section>
+        <aside id="streams" class="streams" aria-labelledby="streams-title">
+          <div class="section-title"><h2 id="streams-title">Stream guide</h2></div>
+          <div id="stream-filters" class="filters" aria-label="Filter streams by platform" hidden>
+            <button type="button" data-platform="All" aria-pressed="true">All</button>
+            <button type="button" data-platform="Twitch" aria-pressed="false">Twitch</button>
+            <button type="button" data-platform="YouTube" aria-pressed="false">YouTube</button>
+            <button type="button" data-platform="Kick" aria-pressed="false">Kick</button>
+          </div>
+          <div id="stream-list" class="stream-list" aria-live="polite" aria-busy="true"><p class="subtle">Loading stream listings…</p></div>
+          <div class="discovery">
+            <a href="https://www.twitch.tv/directory/category/grand-theft-auto-vi"><span>Browse GTA VI on Twitch</span><span aria-hidden="true">↗</span></a>
+            <a href="https://www.youtube.com/results?search_query=GTA+VI+live&amp;sp=EgJAAQ%253D%253D"><span>Find live streams on YouTube</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </aside>
+      </div>
+      <section id="media" class="media" aria-labelledby="media-title">
+        <div class="section-title"><h2 id="media-title">Media</h2></div>
+        <div id="media-list" class="media-grid" aria-busy="true"><p class="subtle">Loading media…</p></div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="frame footer-inner">
+      <a class="wordmark" href="/">Vice <span>/</span> <b>Dispatch</b></a>
+      <p>Independent fan site. Grand Theft Auto VI belongs to Rockstar Games and Take-Two Interactive.</p>
+      <a href="/editor">Editor</a>
+    </div>
+  </footer>
+  <noscript><p class="frame">Enable JavaScript to load the feed, or visit <a href="https://www.rockstargames.com/VI">Rockstar Games</a> for official updates.</p></noscript>
+</body>
+</html>

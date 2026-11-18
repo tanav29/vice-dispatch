@@ -1,0 +1,15 @@
+{
+  "name": "vice-dispatch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env scripts/dev.js",
+    "check": "node scripts/check.js",
+    "build": "npm run check"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.3.0"
+  }
+}
